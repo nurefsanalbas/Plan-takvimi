@@ -34,24 +34,17 @@
   ::-webkit-scrollbar{height:10px;width:10px;}
   ::-webkit-scrollbar-thumb{background:#D3D8E2;border-radius:6px;}
   ::-webkit-scrollbar-track{background:transparent;}
- 
   .app{max-width:1360px;margin:0 auto;padding:22px 22px 60px;}
- 
-  /* ---------- Header ---------- */
   .topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:14px;flex-wrap:wrap;}
   .brand{display:flex;align-items:center;gap:12px;}
-  .brand-mark{width:40px;height:40px;border-radius:11px;background:linear-gradient(160deg,var(--thy-red),#8c0a20);display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--mono);font-weight:700;font-size:13px;letter-spacing:-0.5px;box-shadow:0 4px 14px rgba(200,16,46,0.25);flex-shrink:0;}
+  .brand-mark{width:40px;height:40px;border-radius:11px;background:linear-gradient(160deg,var(--thy-red),#8c0a20);display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--mono);font-size:10px;font-weight:900;letter-spacing:-0.5px;}
   .brand h1{font-size:18px;margin:0;font-weight:800;letter-spacing:0.1px;color:#171A22;}
   .brand span.sub{display:block;font-family:var(--sans);font-weight:600;font-size:11.5px;color:var(--ink-dim);letter-spacing:0.3px;margin-top:2px;}
   .clock{font-family:var(--mono);font-size:12px;color:var(--ink-dim);border:1px solid var(--line);padding:8px 12px;border-radius:9px;background:var(--board);white-space:nowrap;box-shadow:var(--shadow);}
   .clock b{color:var(--thy-red);font-weight:700;}
- 
-  /* ---------- Panel shell ---------- */
   .panel{background:var(--board);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin-bottom:16px;box-shadow:var(--shadow);}
   .panel-title{font-family:var(--sans);font-weight:800;font-size:12.5px;letter-spacing:0.4px;text-transform:uppercase;color:var(--ink-dim);margin:0 0 14px;display:flex;align-items:center;gap:8px;}
   .panel-title::before{content:'';width:7px;height:7px;background:var(--thy-red);border-radius:50%;display:inline-block;}
- 
-  /* ---------- Controls row ---------- */
   .controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
   .seg{display:flex;background:var(--board2);border:1px solid var(--line);border-radius:9px;overflow:hidden;}
   .seg button{font-family:var(--sans);font-weight:700;font-size:12px;padding:9px 16px;background:transparent;border:none;color:var(--ink-dim);cursor:pointer;letter-spacing:0.3px;}
@@ -61,30 +54,24 @@
   .navbtn:hover{border-color:var(--thy-red);color:var(--thy-red);background:var(--thy-red-soft);}
   .period-label{font-family:var(--sans);font-weight:700;font-size:13.5px;min-width:150px;text-align:center;color:var(--ink);}
   .spacer{flex:1;}
-  .btn-primary{font-family:var(--sans);font-weight:700;font-size:13px;background:var(--thy-red);color:#fff;border:none;border-radius:9px;padding:10px 17px;cursor:pointer;box-shadow:0 2px 8px rgba(200,16,46,0.25);}
+  .btn-primary{font-family:var(--sans);font-weight:700;font-size:13px;background:var(--thy-red);color:#fff;border:none;border-radius:9px;padding:10px 17px;cursor:pointer;box-shadow:0 2px 8px rgba(200,16,46,0.2);}
   .btn-primary:hover{background:#a80c25;}
-  .btn-secondary{font-family:var(--sans);font-weight:700;font-size:13px;background:var(--delay);color:#fff;border:none;border-radius:9px;padding:10px 17px;cursor:pointer;box-shadow:0 2px 8px rgba(234,88,12,0.25);}
+  .btn-secondary{font-family:var(--sans);font-weight:700;font-size:13px;background:var(--delay);color:#fff;border:none;border-radius:9px;padding:10px 17px;cursor:pointer;box-shadow:0 2px 8px rgba(234,88,12,0.2);}
   .btn-secondary:hover{background:#C2410C;}
   .btn-ghost{font-family:var(--sans);font-weight:700;font-size:12px;background:var(--board);color:var(--ink-dim);border:1px solid var(--line);border-radius:9px;padding:8px 12px;cursor:pointer;}
   .btn-ghost:hover{color:var(--ink);border-color:var(--ink-dimmer);}
- 
-  /* ---------- Filters ---------- */
   .filters-row{display:flex;gap:22px;flex-wrap:wrap;margin-top:16px;}
   .filter-block{min-width:210px;}
   .filter-label{font-family:var(--sans);font-weight:700;font-size:10.5px;color:var(--ink-dimmer);text-transform:uppercase;letter-spacing:0.8px;margin-bottom:8px;}
   .chip-row{display:flex;flex-wrap:wrap;gap:6px;}
-  .chip{font-family:var(--sans);font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:20px;border:1px solid var(--line);background:var(--board2);color:var(--ink-dim);cursor:pointer;user-select:none;display:flex;align-items:center;gap:6px;}
+  .chip{font-family:var(--sans);font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:20px;border:1px solid var(--line);background:var(--board2);color:var(--ink-dim);cursor:pointer;user-select:none;}
   .chip:hover{border-color:var(--ink-dimmer);}
   .chip.on{color:#fff;border-color:transparent;}
   .chip .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
   .team-chip.on{background:#3B4252;}
- 
-  /* ---------- Legend ---------- */
   .legend-row{display:flex;flex-wrap:wrap;gap:18px;margin-top:14px;padding-top:14px;border-top:1px solid var(--line);}
   .legend-item{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--ink-dim);}
   .legend-swatch{width:16px;height:12px;border-radius:3px;flex-shrink:0;border:1px solid rgba(0,0,0,0.06);}
- 
-  /* ---------- Board / calendar ---------- */
   .board-scroll{overflow-x:auto;border-radius:10px;border:1px solid var(--line);}
   .board{border-collapse:separate;border-spacing:0;width:100%;}
   .board col.name-col{width:150px;}
@@ -96,12 +83,10 @@
   .daycell-head.blocked-holiday{background:var(--hatch-red);}
   .daycell-head.blocked-regression{background:var(--hatch-red);}
   .daycell-head.weekend{background:var(--board3);}
-  .name-head{position:sticky;left:0;z-index:3;background:var(--board2);text-align:left;padding:8px 12px;font-family:var(--sans);font-weight:700;font-size:10.5px;color:var(--ink-dimmer);text-transform:uppercase;letter-spacing:0.6px;}
- 
+  .name-head{position:sticky;left:0;z-index:3;background:var(--board2);text-align:left;padding:8px 12px;font-family:var(--sans);font-weight:700;font-size:10.5px;color:var(--ink-dimmer);text-transform:uppercase;letter-spacing:0.5px;}
   .person-name-cell{position:sticky;left:0;background:var(--board);z-index:1;padding:9px 12px;white-space:nowrap;}
   .person-name-cell .pname{font-weight:700;font-size:13px;color:var(--ink);}
   .person-name-cell .pteam{display:block;font-family:var(--sans);font-weight:600;font-size:9.5px;color:var(--ink-dimmer);text-transform:uppercase;letter-spacing:0.5px;margin-top:1px;}
- 
   .daycell{height:40px;min-width:34px;position:relative;padding:0;}
   .daycell.weekend{background:var(--board3);}
   .daycell.holiday{background:var(--hatch-red);}
@@ -111,16 +96,12 @@
   .task-fill.start-cap{left:4px;border-top-left-radius:6px;border-bottom-left-radius:6px;}
   .task-fill.end-cap{right:4px;border-top-right-radius:6px;border-bottom-right-radius:6px;}
   .task-fill.delay-block{background:var(--hatch-delay) !important;border:1px solid var(--delay);}
- 
-  /* week view bigger cells */
   .board.week .daycell{height:74px;min-width:132px;}
   .board.week .daycell-head{min-width:132px;}
   .week-tag{position:absolute;top:6px;left:6px;right:6px;bottom:6px;border-radius:7px;padding:5px 7px;font-size:11px;line-height:1.25;overflow:hidden;color:#fff;font-weight:700;}
   .week-tag small{display:block;font-family:var(--mono);font-weight:500;font-size:9.5px;opacity:0.9;margin-top:2px;}
   .week-tag.delay-tag{background:linear-gradient(135deg,#F97316,#C2410C) !important;}
-  .week-blockedlabel{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:600;font-size:9.5px;color:var(--ink-dimmer);text-align:center;padding:4px;}
- 
-  /* ---------- Blocked-days / delay manager ---------- */
+  .week-blockedlabel{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-weight:600;font-size:9.5px;color:var(--ink-dimmer);text-align:center;padding:6px;}
   .manager-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:16px;}
   @media (max-width:600px){.manager-grid{grid-template-columns:1fr;}}
   .manager-col{background:var(--board2);border:1px solid var(--line);border-radius:11px;padding:14px 15px;}
@@ -146,8 +127,6 @@
   .manager-addbtn:hover{background:#a80c25;}
   .manager-addbtn.delay-btn{background:var(--delay);}
   .manager-addbtn.delay-btn:hover{background:#C2410C;}
- 
-  /* ---------- Summary table ---------- */
   table.summary{width:100%;border-collapse:collapse;font-size:13px;}
   table.summary th{font-family:var(--sans);font-weight:700;font-size:10.5px;text-transform:uppercase;letter-spacing:0.6px;color:var(--ink-dimmer);text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);}
   table.summary td{padding:10px 10px;border-bottom:1px solid var(--line);vertical-align:middle;}
@@ -161,14 +140,10 @@
   .week-bar-cell{width:140px;}
   .week-bar-track{background:var(--board3);border-radius:4px;height:8px;overflow:hidden;}
   .week-bar-fill{height:100%;background:var(--amber);}
- 
-  /* ---------- Example callout ---------- */
   .callout{border:1px solid var(--thy-red);background:linear-gradient(180deg, rgba(200,16,46,0.06), rgba(200,16,46,0.015));border-radius:12px;padding:14px 16px;display:flex;gap:14px;align-items:flex-start;}
   .callout .ico{font-family:var(--mono);font-size:11px;color:#fff;background:var(--thy-red);border-radius:6px;padding:3px 8px;flex-shrink:0;margin-top:1px;}
   .callout p{margin:0;font-size:13px;line-height:1.6;color:var(--ink);}
   .callout b{color:var(--thy-red);font-weight:800;}
- 
-  /* ---------- Add task / delay form ---------- */
   .form-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;align-items:end;}
   .field label{display:block;font-family:var(--sans);font-weight:700;font-size:10px;text-transform:uppercase;letter-spacing:0.5px;color:var(--ink-dimmer);margin-bottom:6px;}
   .field select, .field input{width:100%;background:var(--board);border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:9px 10px;font-family:var(--sans);font-size:13px;}
@@ -176,7 +151,6 @@
   #addForm, #delayForm{display:none;margin-top:14px;padding-top:14px;border-top:1px solid var(--line);}
   #addForm.open, #delayForm.open{display:block;}
   .form-note{font-size:11.5px;color:var(--ink-dimmer);margin-top:8px;}
- 
   @media (max-width:720px){
     .form-grid{grid-template-columns:1fr 1fr;}
     .clock{display:none;}
@@ -185,7 +159,6 @@
 </head>
 <body>
 <div class="app">
- 
   <div class="topbar">
     <div class="brand">
       <div class="brand-mark">THY</div>
@@ -201,10 +174,8 @@
     </div>
   </div>
   <div style="font-size:11.5px;color:var(--ink-dim);margin:-4px 0 16px;">
-    Veriler otomatik olarak kaydedilir ve panoyu açan herkes tarafından paylaşılır — uygulamayı kapatıp tekrar açtığınızda en güncel hal yüklenir.
+    Veriler sunucuda kaydedilir — tüm takım üyeleri otomatik olarak en güncel halini görür.
   </div>
- 
-  <!-- Controls -->
   <div class="panel">
     <div class="panel-title">Görünüm & Dönem</div>
     <div class="controls">
@@ -220,209 +191,61 @@
       <div class="spacer"></div>
       <button class="btn-primary" id="toggleForm">+ Yeni İş Ata</button>
     </div>
- 
     <div id="addForm">
       <div class="form-grid">
-        <div class="field">
-          <label>Ekip</label>
-          <select id="fTeam"></select>
-        </div>
-        <div class="field">
-          <label>Kişi</label>
-          <select id="fPerson"></select>
-        </div>
-        <div class="field">
-          <label>Proje</label>
-          <select id="fProject"></select>
-        </div>
-        <div class="field">
-          <label>Efor (adam/gün)</label>
-          <input type="number" id="fEffort" min="1" value="3">
-        </div>
-        <div class="field">
-          <label>Başlangıç Tarihi</label>
-          <input type="date" id="fStart" value="2026-10-19">
-        </div>
+        <div class="field"><label>Ekip</label><select id="fTeam"></select></div>
+        <div class="field"><label>Kişi</label><select id="fPerson"></select></div>
+        <div class="field"><label>Proje</label><select id="fProject"></select></div>
+        <div class="field"><label>Efor (adam/gün)</label><input type="number" id="fEffort" min="1" value="3"></div>
+        <div class="field"><label>Başlangıç Tarihi</label><input type="date" id="fStart" value="2026-10-19"></div>
       </div>
       <button class="btn-primary" style="margin-top:12px" id="submitTask">İşi Takvime Yerleştir</button>
       <a href="#" id="taskCancelEdit" style="display:none;margin-left:12px;color:var(--thy-red);font-size:12.5px;">İptal</a>
-      <div class="form-note">Motor; köprü tatillerini, resmi tatilleri, hafta sonlarını ve regresyon koşum günlerini otomatik atlar. Efor (iş günü) sabit kalır, bitiş tarihi ve toplam süre buna göre uzar.</div>
- 
-      <div style="margin-top:16px;padding-top:14px;border-top:1px solid var(--line);">
-        <div class="filter-label" style="margin-bottom:10px;">Atanan İşler</div>
-        <div class="manager-list" id="taskList" style="max-height:260px;"></div>
-      </div>
+      <div class="form-note">Motor; köprü tatillerini, resmi tatilleri, hafta sonlarını ve regresyon koşum günlerini otomatik atlar. Efor (iş günü) sabit kalır, bitiş tarihi ve toplam süreyi hesaplar.</div>
+      <div style="margin-top:16px;padding-top:14px;border-top:1px solid var(--line);"><div class="filter-label" style="margin-bottom:10px;">Atanan İşler</div><div class="manager-list" id="taskList" style="max-height:260px;"></div></div>
     </div>
- 
     <div class="filters-row">
-      <div class="filter-block">
-        <div class="filter-label">Ekip Filtresi</div>
-        <div class="chip-row" id="teamChips"></div>
-      </div>
-      <div class="filter-block" style="min-width:320px;">
-        <div class="filter-label">Kişi Filtresi</div>
-        <div class="chip-row" id="personChips"></div>
-      </div>
-      <div class="filter-block" style="min-width:320px;">
-        <div class="filter-label">Proje Filtresi</div>
-        <div class="chip-row" id="projectChips"></div>
-      </div>
+      <div class="filter-block"><div class="filter-label">Ekip Filtresi</div><div class="chip-row" id="teamChips"></div></div>
+      <div class="filter-block" style="min-width:320px;"><div class="filter-label">Kişi Filtresi</div><div class="chip-row" id="personChips"></div></div>
+      <div class="filter-block" style="min-width:320px;"><div class="filter-label">Proje Filtresi</div><div class="chip-row" id="projectChips"></div></div>
     </div>
- 
     <div class="legend-row">
       <div class="legend-item"><div class="legend-swatch" style="background:var(--hatch-red)"></div> Köprü / Resmi Tatil ve Regresyon Koşumu — iş planlanamaz (kırmızı)</div>
       <div class="legend-item"><div class="legend-swatch" style="background:rgba(255,255,255,0.05)"></div> Hafta sonu</div>
     </div>
   </div>
- 
-  <!-- Teams & People & Projects manager -->
   <div class="panel">
     <div class="panel-title">Ekipler, Kişiler & Projeler — Kullanıcı Girişi</div>
     <div class="manager-grid">
-      <div class="manager-col">
-        <h4>Ekipler</h4>
-        <div class="manager-list" id="teamList"></div>
-        <div class="manager-form single">
-          <div class="field"><label>Ekip Adı</label><input type="text" id="tmName" placeholder="örn. Otomasyon Test Ekibi"></div>
-        </div>
-        <button class="manager-addbtn" id="tmAddBtn">+ Ekip Ekle</button>
-        <div class="form-note" id="tmEditNote" style="display:none;">Düzenleniyor… <a href="#" id="tmCancelEdit" style="color:var(--thy-red)">İptal</a></div>
-      </div>
-      <div class="manager-col">
-        <h4>Kişiler</h4>
-        <div class="manager-list" id="peopleList"></div>
-        <div class="manager-form">
-          <div class="field"><label>Ad Soyad</label><input type="text" id="pName" placeholder="örn. Ayşe Kılıç"></div>
-          <div class="field"><label>Ekip</label><select id="pTeam"></select></div>
-        </div>
-        <button class="manager-addbtn" id="pAddBtn">+ Kişi Ekle</button>
-        <div class="form-note" id="pEditNote" style="display:none;">Düzenleniyor… <a href="#" id="pCancelEdit" style="color:var(--thy-red)">İptal</a></div>
-      </div>
-      <div class="manager-col">
-        <h4>Projeler</h4>
-        <div class="manager-list" id="projectList"></div>
-        <div class="manager-form">
-          <div class="field"><label>Proje Adı</label><input type="text" id="prName" placeholder="örn. Sadakat Programı"></div>
-          <div class="field"><label>Renk</label><input type="color" id="prColor" value="#4C9BE8" style="height:34px;padding:3px;"></div>
-        </div>
-        <button class="manager-addbtn" id="prAddBtn">+ Proje Ekle</button>
-        <div class="form-note" id="prEditNote" style="display:none;">Düzenleniyor… <a href="#" id="prCancelEdit" style="color:var(--thy-red)">İptal</a></div>
-      </div>
+      <div class="manager-col"><h4>Ekipler</h4><div class="manager-list" id="teamList"></div><div class="manager-form single"><div class="field"><label>Ekip Adı</label><input type="text" id="tmName" placeholder="örn. Otomasyon Test Ekibi"></div></div><button class="manager-addbtn" id="tmAddBtn">+ Ekip Ekle</button><div class="form-note" id="tmEditNote" style="display:none;">Düzenleniyor… <a href="#" id="tmCancelEdit" style="color:var(--thy-red)">İptal</a></div></div>
+      <div class="manager-col"><h4>Kişiler</h4><div class="manager-list" id="peopleList"></div><div class="manager-form"><div class="field"><label>Ad Soyad</label><input type="text" id="pName" placeholder="örn. Ayşe Kılıç"></div><div class="field"><label>Ekip</label><select id="pTeam"></select></div></div><button class="manager-addbtn" id="pAddBtn">+ Kişi Ekle</button><div class="form-note" id="pEditNote" style="display:none;">Düzenleniyor… <a href="#" id="pCancelEdit" style="color:var(--thy-red)">İptal</a></div></div>
+      <div class="manager-col"><h4>Projeler</h4><div class="manager-list" id="projectList"></div><div class="manager-form"><div class="field"><label>Proje Adı</label><input type="text" id="prName" placeholder="örn. Sadakat Programı"></div><div class="field"><label>Renk</label><input type="color" id="prColor" value="#4C9BE8" style="height:34px;padding:3px;"></div></div><button class="manager-addbtn" id="prAddBtn">+ Proje Ekle</button><div class="form-note" id="prEditNote" style="display:none;">Düzenleniyor… <a href="#" id="prCancelEdit" style="color:var(--thy-red)">İptal</a></div></div>
     </div>
   </div>
- 
-  <!-- Blocked days manager: user-entered holidays & regression periods -->
   <div class="panel">
     <div class="panel-title">Köprü Tatilleri & Regresyon Dönemleri — Kullanıcı Girişi</div>
     <div class="manager-grid">
-      <div class="manager-col">
-        <h4>Köprü / Resmi Tatiller</h4>
-        <div class="manager-list" id="holidayList"></div>
-        <div class="manager-form">
-          <div class="field"><label>Tarih</label><input type="date" id="mhDate"></div>
-          <div class="field"><label>Açıklama</label><input type="text" id="mhLabel" placeholder="örn. Köprü Tatili"></div>
-        </div>
-        <button class="manager-addbtn" id="mhAddBtn">+ Tatil Günü Ekle</button>
-        <div class="form-note" id="mhEditNote" style="display:none;">Düzenleniyor… <a href="#" id="mhCancelEdit" style="color:var(--thy-red)">İptal</a></div>
-      </div>
-      <div class="manager-col">
-        <h4>Regresyon Koşum Dönemleri</h4>
-        <div class="manager-list" id="regressionList"></div>
-        <div class="manager-form">
-          <div class="field"><label>Başlangıç</label><input type="date" id="mrStart"></div>
-          <div class="field"><label>Bitiş</label><input type="date" id="mrEnd"></div>
-          <div class="field full"><label>Açıklama</label><input type="text" id="mrLabel" placeholder="örn. Q4 Regresyon Koşumu"></div>
-        </div>
-        <button class="manager-addbtn" id="mrAddBtn">+ Regresyon Dönemi Ekle</button>
-        <div class="form-note" id="mrEditNote" style="display:none;">Düzenleniyor… <a href="#" id="mrCancelEdit" style="color:var(--thy-red)">İptal</a></div>
-      </div>
+      <div class="manager-col"><h4>Köprü / Resmi Tatiller</h4><div class="manager-list" id="holidayList"></div><div class="manager-form"><div class="field"><label>Tarih</label><input type="date" id="mhDate"></div><div class="field"><label>Açıklama</label><input type="text" id="mhLabel" placeholder="örn. Köprü Tatili"></div></div><button class="manager-addbtn" id="mhAddBtn">+ Tatil Günü Ekle</button><div class="form-note" id="mhEditNote" style="display:none;">Düzenleniyor… <a href="#" id="mhCancelEdit" style="color:var(--thy-red)">İptal</a></div></div>
+      <div class="manager-col"><h4>Regresyon Koşum Dönemleri</h4><div class="manager-list" id="regressionList"></div><div class="manager-form"><div class="field"><label>Başlangıç</label><input type="date" id="mrStart"></div><div class="field"><label>Bitiş</label><input type="date" id="mrEnd"></div><div class="field full"><label>Açıklama</label><input type="text" id="mrLabel" placeholder="örn. Q4 Regresyon Koşumu"></div></div><button class="manager-addbtn" id="mrAddBtn">+ Regresyon Dönemi Ekle</button><div class="form-note" id="mrEditNote" style="display:none;">Düzenleniyor… <a href="#" id="mrCancelEdit" style="color:var(--thy-red)">İptal</a></div></div>
     </div>
   </div>
- 
-  <!-- Example callout -->
-  <div class="panel">
-    <div class="panel-title">Örnek Senaryo (Madde 6)</div>
-    <div class="callout">
-      <div class="ico">i</div>
-      <p id="exampleText">yükleniyor…</p>
-    </div>
-  </div>
- 
-  <!-- Calendar / board -->
-  <div class="panel">
-    <div class="panel-title">Efor Takvimi — Kişi Bazında Zaman Çizelgesi</div>
-    <div class="board-scroll">
-      <table class="board" id="boardTable"></table>
-    </div>
-  </div>
- 
-  <!-- Summary -->
-  <div class="panel">
-    <div class="panel-title">Kişi Bazında Toplam Efor Özeti</div>
-    <table class="summary" id="summaryTable"></table>
-  </div>
- 
+  <div class="panel"><div class="panel-title">Örnek Senaryo (Madde 6)</div><div class="callout"><div class="ico">i</div><p id="exampleText">yükleniyor…</p></div></div>
+  <div class="panel"><div class="panel-title">Efor Takvimi — Kişi Bazında Zaman Çizelgesi</div><div class="board-scroll"><table class="board" id="boardTable"></table></div></div>
+  <div class="panel"><div class="panel-title">Kişi Bazında Toplam Efor Özeti</div><table class="summary" id="summaryTable"></table></div>
 </div>
- 
+
 <script>
-/* ================= DATA ================= */
-let TEAMS = [
-  {id:'backend', name:'Backend Test Ekibi'},
-  {id:'mobile',  name:'Mobile Test Ekibi'},
-  {id:'web',     name:'Web Test Ekibi'},
-];
- 
-let PEOPLE = [
-  {id:'irmak',  name:'Irmak Yılmaz', team:'backend'},
-  {id:'ahmet',  name:'Ahmet Kaya',   team:'backend'},
-  {id:'zeynep', name:'Zeynep Demir', team:'mobile'},
-  {id:'mehmet', name:'Mehmet Çelik', team:'mobile'},
-  {id:'elif',   name:'Elif Şahin',   team:'web'},
-  {id:'burak',  name:'Burak Aydın',  team:'web'},
-];
- 
-let PROJECTS = [
-  {id:'redesign', name:'Redesign Projesi',        color:'#3DB35E'},
-  {id:'push',     name:'Push Bildirim Projesi',   color:'#E85D9E'},
-  {id:'odeme',    name:'Ödeme Entegrasyonu',      color:'#4C9BE8'},
-  {id:'checkin',  name:'Check-in Modülü',          color:'#F0883E'},
-  {id:'bagaj',    name:'Bagaj Takip API',          color:'#A87EEA'},
-];
- 
-// Şirket tarafından belirlenen köprü / resmi tatiller (Madde 1)
-// Kullanıcı tarafından panelden girilir/düzenlenir — burada başlangıç örnek verisi var.
-let HOLIDAYS = [
-  {date:'2026-10-29', label:'Cumhuriyet Bayramı'},
-  {date:'2026-10-30', label:'Köprü Tatili (Şirket Kararı)'},
-];
- 
-// Regresyon koşum tarihleri (Madde 2)
-// Kullanıcı tarafından panelden girilir/düzenlenir — burada başlangıç örnek verisi var.
-let REGRESSIONS = [
-  {start:'2026-10-12', end:'2026-10-16', label:'Q4 Regresyon Koşumu'},
-];
- 
-// Ham iş atamaları — motor bunlardan efor/gün planı üretir (Madde 6)
-let RAW_TASKS = [
-  {id:'t1', person:'irmak',  project:'redesign', effort:5, start:'2026-10-14'},
-  {id:'t2', person:'ahmet',  project:'push',     effort:4, start:'2026-10-28'},
-  {id:'t3', person:'zeynep', project:'odeme',    effort:4, start:'2026-10-05'},
-  {id:'t4', person:'mehmet', project:'checkin',  effort:3, start:'2026-10-19'},
-  {id:'t5', person:'elif',   project:'bagaj',    effort:6, start:'2026-10-06'},
-  {id:'t6', person:'burak',  project:'redesign', effort:3, start:'2026-10-26'},
-];
- 
-// İlk yüklemedeki örnek veri — "Varsayılanlara Sıfırla" bu anlık görüntüye döner.
-const DEFAULT_SNAPSHOT = JSON.parse(JSON.stringify({TEAMS, PEOPLE, PROJECTS, HOLIDAYS, REGRESSIONS, RAW_TASKS}));
- 
-/* ================= HELPERS ================= */
+const API_BASE = window.location.origin;
+
+let TEAMS = [], PEOPLE = [], PROJECTS = [], HOLIDAYS = [], REGRESSIONS = [], RAW_TASKS = [], TASKS = [];
+
 const pad2 = n => String(n).padStart(2,'0');
 const dateKey = d => `${d.getFullYear()}-${pad2(d.getMonth()+1)}-${pad2(d.getDate())}`;
 const parseKey = k => { const [y,m,d]=k.split('-').map(Number); return new Date(y,m-1,d); };
 const addDays = (d,n) => { const r=new Date(d); r.setDate(r.getDate()+n); return r; };
 const DOW = ['Paz','Pzt','Sal','Çar','Per','Cum','Cmt'];
 const MONTHS = ['Ocak','Şubat','Mart','Nisan','Mayıs','Haziran','Temmuz','Ağustos','Eylül','Ekim','Kasım','Aralık'];
- 
+
 function isWeekend(d){ const w=d.getDay(); return w===0||w===6; }
 function holidayInfo(d){ const k=dateKey(d); return HOLIDAYS.find(h=>h.date===k); }
 function regressionInfo(d){ const k=dateKey(d); return REGRESSIONS.find(r=> k>=r.start && k<=r.end); }
@@ -433,14 +256,12 @@ function blockedReason(d){
   if(isWeekend(d)) return {type:'weekend', label:'Hafta Sonu'};
   return null;
 }
- 
-// Madde 6: efor sabit kalır (adam/gün), motor bloklu günleri atlayarak
-// bitiş tarihini ve toplam süreyi (duration) hesaplar.
+
 function scheduleTask(startKey, effortDays){
   let cur = parseKey(startKey);
   let consumed = 0;
-  const workdays = [];   // gerçek efor harcanan günler
-  const allDays = [];    // start..end arası TÜM günler (atlanan günler dahil, duration için)
+  const workdays = [];
+  const allDays = [];
   let safety = 0;
   while(consumed < effortDays && safety < 400){
     allDays.push({date:new Date(cur), blocked: isBlocked(cur), reason: blockedReason(cur)});
@@ -452,123 +273,117 @@ function scheduleTask(startKey, effortDays){
     safety++;
   }
   const endDate = new Date(cur);
-  const durationCalendarDays = allDays.length; // start'tan end'e kadar toplam gün sayısı
+  const durationCalendarDays = allDays.length;
   return { workdays, allDays, endDate, durationCalendarDays };
 }
- 
-// Tüm görevleri hesapla
+
 function computeTasks(list){
   return list.map(t=>{
     const sched = scheduleTask(t.start, t.effort);
     return {...t, ...sched};
   });
 }
- 
-let TASKS = computeTasks(RAW_TASKS);
- 
-/* ================= KALICI DEPOLAMA (window.storage) =================
-   Bu pano ekip içinde PAYLAŞILAN bir veri katmanında saklanır: ekipler,
-   kişiler, projeler, işler, köprü tatilleri ve regresyon dönemleri —
-   panoyu açan herkes aynı güncel veriyi görür ve düzenler. */
-const STORAGE_KEY = 'thy-efor-takvimi-veri-v1';
-let saveTimer = null;
- 
+
 function setSaveStatus(text, isError){
   const el = document.getElementById('saveStatus');
   if(!el) return;
   el.textContent = text;
   el.style.color = isError ? 'var(--thy-red)' : 'var(--ink-dimmer)';
 }
- 
-async function persistState(){
+
+async function loadData(){
+  try{
+    setSaveStatus('Sunucudan veriler yükleniyor…', false);
+    const res = await fetch(`${API_BASE}/api/data`);
+    if(res.ok){
+      const data = await res.json();
+      TEAMS = data.TEAMS || [];
+      PEOPLE = data.PEOPLE || [];
+      PROJECTS = data.PROJECTS || [];
+      HOLIDAYS = data.HOLIDAYS || [];
+      REGRESSIONS = data.REGRESSIONS || [];
+      RAW_TASKS = data.RAW_TASKS || [];
+      TASKS = computeTasks(RAW_TASKS);
+      state.teamFilter = new Set(TEAMS.map(t=>t.id));
+      state.personFilter = new Set(PEOPLE.map(p=>p.id));
+      state.projectFilter = new Set(PROJECTS.map(p=>p.id));
+      setSaveStatus('Veriler yüklendi ✓', false);
+    } else {
+      setSaveStatus('Veri yükleme hatası', true);
+    }
+  } catch(err){
+    console.error('API hatası:', err);
+    setSaveStatus('Sunucuya bağlanılamıyor', true);
+  }
+}
+
+async function saveData(){
   setSaveStatus('Kaydediliyor…', false);
-  clearTimeout(saveTimer);
   const payload = {TEAMS, PEOPLE, PROJECTS, HOLIDAYS, REGRESSIONS, RAW_TASKS};
   try{
-    const res = await window.storage.set(STORAGE_KEY, JSON.stringify(payload), true);
-    if(res){
+    const res = await fetch(`${API_BASE}/api/data`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(payload)
+    });
+    if(res.ok){
       setSaveStatus('Kaydedildi ✓ · ' + new Date().toLocaleTimeString('tr-TR',{hour:'2-digit',minute:'2-digit'}), false);
     } else {
       setSaveStatus('Kaydedilemedi ⚠', true);
     }
   } catch(err){
     console.error('Kayıt hatası:', err);
-    setSaveStatus('Kaydedilemedi ⚠ (bağlantı sorunu)', true);
+    setSaveStatus('Kayıt hatası', true);
   }
 }
- 
-async function loadState(){
+
+async function resetData(){
   try{
-    const res = await window.storage.get(STORAGE_KEY, true);
-    if(res && res.value){
-      const data = JSON.parse(res.value);
-      if(data.TEAMS) TEAMS = data.TEAMS;
-      if(data.PEOPLE) PEOPLE = data.PEOPLE;
-      if(data.PROJECTS) PROJECTS = data.PROJECTS;
-      if(data.HOLIDAYS) HOLIDAYS = data.HOLIDAYS;
-      if(data.REGRESSIONS) REGRESSIONS = data.REGRESSIONS;
-      if(data.RAW_TASKS) RAW_TASKS = data.RAW_TASKS;
-      // Kaydedilmiş veriye göre filtreleri yeniden kur (her şey görünür başlar)
-      state.teamFilter = new Set(TEAMS.map(t=>t.id));
-      state.personFilter = new Set(PEOPLE.map(p=>p.id));
-      state.projectFilter = new Set(PROJECTS.map(p=>p.id));
-      setSaveStatus('Kayıtlı veriler yüklendi', false);
-    } else {
-      setSaveStatus('Örnek veriyle başlatıldı', false);
+    setSaveStatus('Sıfırlanıyor…', false);
+    const res = await fetch(`${API_BASE}/api/reset`, {method: 'POST'});
+    if(res.ok){
+      await loadData();
+      fullRefresh();
     }
   } catch(err){
-    // Kayıt bulunamadı veya erişilemedi — örnek veriyle devam edilir
-    setSaveStatus('Örnek veriyle başlatıldı', false);
+    console.error('Sıfırlama hatası:', err);
   }
-  TASKS = computeTasks(RAW_TASKS);
 }
- 
-function resetToDefaults(){
-  const snap = JSON.parse(JSON.stringify(DEFAULT_SNAPSHOT));
-  TEAMS = snap.TEAMS; PEOPLE = snap.PEOPLE; PROJECTS = snap.PROJECTS;
-  HOLIDAYS = snap.HOLIDAYS; REGRESSIONS = snap.REGRESSIONS; RAW_TASKS = snap.RAW_TASKS;
-  state.teamFilter = new Set(TEAMS.map(t=>t.id));
-  state.personFilter = new Set(PEOPLE.map(p=>p.id));
-  state.projectFilter = new Set(PROJECTS.map(p=>p.id));
-  fullRefresh();
-}
- 
-/* ================= STATE ================= */
+
 const genId = prefix => `${prefix}_${Date.now().toString(36)}${Math.random().toString(36).slice(2,6)}`;
- 
+
 const state = {
-  mode: 'month',                 // 'month' | 'week'
-  monthAnchor: new Date(2026,9,1),   // October 2026
-  weekAnchor: mondayOf(new Date(2026,9,12)), // week containing regression period
-  teamFilter: new Set(TEAMS.map(t=>t.id)),
-  personFilter: new Set(PEOPLE.map(p=>p.id)),
-  projectFilter: new Set(PROJECTS.map(p=>p.id)),
+  mode: 'month',
+  monthAnchor: new Date(2026,9,1),
+  weekAnchor: mondayOf(new Date(2026,9,12)),
+  teamFilter: new Set(),
+  personFilter: new Set(),
+  projectFilter: new Set(),
   editingPersonId: null,
   editingProjectId: null,
   editingTeamId: null,
   editingTaskId: null,
-  editingHolidayDate: null,     // orijinal tarih anahtarı (düzenlenen kaydı bulmak için)
-  editingRegressionKey: null,   // orijinal start+end anahtarı
+  editingHolidayDate: null,
+  editingRegressionKey: null,
 };
- 
+
 function mondayOf(d){
   const day = d.getDay();
   const diff = (day===0? -6 : 1-day);
   return addDays(d, diff);
 }
- 
+
 function projectOf(id){ return PROJECTS.find(p=>p.id===id); }
 function personOf(id){ return PEOPLE.find(p=>p.id===id); }
 function teamOf(id){ return TEAMS.find(t=>t.id===id); }
- 
+
 function visiblePeople(){
   return PEOPLE.filter(p => state.teamFilter.has(p.team) && state.personFilter.has(p.id));
 }
 function visibleTasksFor(personId){
   return TASKS.filter(t=> t.person===personId && state.projectFilter.has(t.project));
 }
- 
-/* ================= RENDER: FILTER CHIPS ================= */
+
 function renderFilterChips(){
   const teamBox = document.getElementById('teamChips');
   teamBox.innerHTML = '';
@@ -583,7 +398,7 @@ function renderFilterChips(){
     };
     teamBox.appendChild(el);
   });
- 
+  
   const personBox = document.getElementById('personChips');
   personBox.innerHTML = '';
   PEOPLE.forEach(p=>{
@@ -598,7 +413,7 @@ function renderFilterChips(){
     };
     personBox.appendChild(el);
   });
- 
+  
   const projectBox = document.getElementById('projectChips');
   projectBox.innerHTML = '';
   PROJECTS.forEach(pr=>{
@@ -614,671 +429,105 @@ function renderFilterChips(){
     projectBox.appendChild(el);
   });
 }
- 
-/* ================= RENDER: BLOCKED-DAYS MANAGER (Madde 1 & 2, kullanıcı girişi) ================= */
+
 function fmtShort(k){ const d=parseKey(k); return `${pad2(d.getDate())}.${pad2(d.getMonth()+1)}.${d.getFullYear()}`; }
- 
+
 function renderManagerLists(){
-  /* ---- Tatiller ---- */
   const hBox = document.getElementById('holidayList');
-  if(HOLIDAYS.length===0){
-    hBox.innerHTML = '<div class="manager-empty">Henüz tatil günü girilmedi.</div>';
-  } else {
-    hBox.innerHTML = HOLIDAYS.slice().sort((a,b)=>a.date.localeCompare(b.date)).map(h=>{
+  hBox.innerHTML = HOLIDAYS.length===0 ? '<div class="manager-empty">Henüz tatil günü girilmedi.</div>' : 
+    HOLIDAYS.slice().sort((a,b)=>a.date.localeCompare(b.date)).map(h=>{
       const realIdx = HOLIDAYS.indexOf(h);
       return `<div class="manager-item"><div class="mi-text">${h.label||'Tatil'}<span class="mi-date">${fmtShort(h.date)}</span></div>
-        <div style="display:flex;gap:5px;">
-          <button data-idx="${realIdx}" class="mh-edit" title="Düzenle">✎</button>
-          <button data-idx="${realIdx}" class="mh-del" title="Sil">✕</button>
-        </div></div>`;
+        <button data-idx="${realIdx}" class="mh-edit">✎</button>
+        <button data-idx="${realIdx}" class="mh-del">✕</button></div>`;
     }).join('');
-  }
- 
-  /* ---- Regresyon dönemleri ---- */
+  
   const rBox = document.getElementById('regressionList');
-  if(REGRESSIONS.length===0){
-    rBox.innerHTML = '<div class="manager-empty">Henüz regresyon dönemi girilmedi.</div>';
-  } else {
-    rBox.innerHTML = REGRESSIONS.slice().sort((a,b)=>a.start.localeCompare(b.start)).map(r=>{
+  rBox.innerHTML = REGRESSIONS.length===0 ? '<div class="manager-empty">Henüz regresyon dönemi girilmedi.</div>' :
+    REGRESSIONS.slice().sort((a,b)=>a.start.localeCompare(b.start)).map(r=>{
       const realIdx = REGRESSIONS.indexOf(r);
       return `<div class="manager-item"><div class="mi-text">${r.label||'Regresyon'}<span class="mi-date">${fmtShort(r.start)} – ${fmtShort(r.end)}</span></div>
-        <div style="display:flex;gap:5px;">
-          <button data-idx="${realIdx}" class="mr-edit" title="Düzenle">✎</button>
-          <button data-idx="${realIdx}" class="mr-del" title="Sil">✕</button>
-        </div></div>`;
+        <button data-idx="${realIdx}" class="mr-edit">✎</button>
+        <button data-idx="${realIdx}" class="mr-del">✕</button></div>`;
     }).join('');
-  }
- 
-  hBox.querySelectorAll('.mh-del').forEach(btn=>{
-    btn.onclick = ()=>{ HOLIDAYS.splice(Number(btn.dataset.idx),1); resetHolidayForm(); recomputeAndRenderAll(); };
-  });
-  hBox.querySelectorAll('.mh-edit').forEach(btn=>{
-    btn.onclick = ()=>{
-      const h = HOLIDAYS[Number(btn.dataset.idx)];
-      document.getElementById('mhDate').value = h.date;
-      document.getElementById('mhLabel').value = h.label;
-      state.editingHolidayDate = h.date;
-      document.getElementById('mhAddBtn').textContent = '✓ Tatili Güncelle';
-      document.getElementById('mhEditNote').style.display = 'block';
-    };
-  });
-  rBox.querySelectorAll('.mr-del').forEach(btn=>{
-    btn.onclick = ()=>{ REGRESSIONS.splice(Number(btn.dataset.idx),1); resetRegressionForm(); recomputeAndRenderAll(); };
-  });
-  rBox.querySelectorAll('.mr-edit').forEach(btn=>{
-    btn.onclick = ()=>{
-      const r = REGRESSIONS[Number(btn.dataset.idx)];
-      document.getElementById('mrStart').value = r.start;
-      document.getElementById('mrEnd').value = r.end;
-      document.getElementById('mrLabel').value = r.label;
-      state.editingRegressionKey = r.start+'|'+r.end;
-      document.getElementById('mrAddBtn').textContent = '✓ Dönemi Güncelle';
-      document.getElementById('mrEditNote').style.display = 'block';
-    };
-  });
- 
-  /* ---- Ekipler ---- */
+  
+  hBox.querySelectorAll('.mh-del').forEach(btn=>{ btn.onclick = ()=>{ HOLIDAYS.splice(Number(btn.dataset.idx),1); resetHolidayForm(); recomputeAndRenderAll(); }; });
+  hBox.querySelectorAll('.mh-edit').forEach(btn=>{ btn.onclick = ()=>{ const h = HOLIDAYS[Number(btn.dataset.idx)]; document.getElementById('mhDate').value = h.date; document.getElementById('mhLabel').value = h.label; state.editingHolidayDate = h.date; document.getElementById('mhAddBtn').textContent = '✓ Tatili Güncelle'; document.getElementById('mhEditNote').style.display = 'block'; }; });
+  rBox.querySelectorAll('.mr-del').forEach(btn=>{ btn.onclick = ()=>{ REGRESSIONS.splice(Number(btn.dataset.idx),1); resetRegressionForm(); recomputeAndRenderAll(); }; });
+  rBox.querySelectorAll('.mr-edit').forEach(btn=>{ btn.onclick = ()=>{ const r = REGRESSIONS[Number(btn.dataset.idx)]; document.getElementById('mrStart').value = r.start; document.getElementById('mrEnd').value = r.end; document.getElementById('mrLabel').value = r.label; state.editingRegressionKey = r.start+'|'+r.end; document.getElementById('mrAddBtn').textContent = '✓ Dönemi Güncelle'; document.getElementById('mrEditNote').style.display = 'block'; }; });
+  
   const teamBoxList = document.getElementById('teamList');
-  if(TEAMS.length===0){
-    teamBoxList.innerHTML = '<div class="manager-empty">Henüz ekip eklenmedi.</div>';
-  } else {
-    teamBoxList.innerHTML = TEAMS.map(t=>{
-      const memberCount = PEOPLE.filter(p=>p.team===t.id).length;
-      return `<div class="manager-item"><div class="mi-text">${t.name}<span class="mi-date">${memberCount} kişi</span></div>
-        <div style="display:flex;gap:5px;">
-          <button data-id="${t.id}" class="tm-edit" title="Düzenle">✎</button>
-          <button data-id="${t.id}" class="tm-del" title="Sil">✕</button>
-        </div></div>`;
-    }).join('');
-  }
-  teamBoxList.querySelectorAll('.tm-del').forEach(btn=>{
-    btn.onclick = ()=>{
-      const id = btn.dataset.id;
-      TEAMS = TEAMS.filter(t=>t.id!==id);
-      // Bu ekibe bağlı kişiler ve onların işleri de kaldırılır (kaskad silme)
-      const removedPeople = PEOPLE.filter(p=>p.team===id).map(p=>p.id);
-      PEOPLE = PEOPLE.filter(p=>p.team!==id);
-      for(let i=RAW_TASKS.length-1;i>=0;i--){ if(removedPeople.includes(RAW_TASKS[i].person)) RAW_TASKS.splice(i,1); }
-      removedPeople.forEach(pid=>state.personFilter.delete(pid));
-      state.teamFilter.delete(id);
-      resetTeamForm();
-      fullRefresh();
-    };
-  });
-  teamBoxList.querySelectorAll('.tm-edit').forEach(btn=>{
-    btn.onclick = ()=>{
-      const t = teamOf(btn.dataset.id);
-      document.getElementById('tmName').value = t.name;
-      state.editingTeamId = t.id;
-      document.getElementById('tmAddBtn').textContent = '✓ Ekibi Güncelle';
-      document.getElementById('tmEditNote').style.display = 'block';
-    };
-  });
- 
-  /* ---- Kişiler ---- */
+  teamBoxList.innerHTML = TEAMS.length===0 ? '<div class="manager-empty">Henüz ekip eklenmedi.</div>' :
+    TEAMS.map(t=>{ const memberCount = PEOPLE.filter(p=>p.team===t.id).length; return `<div class="manager-item"><div class="mi-text">${t.name}<span class="mi-date">${memberCount} kişi</span></div><button data-id="${t.id}" class="tm-edit">✎</button><button data-id="${t.id}" class="tm-del">✕</button></div>`; }).join('');
+  teamBoxList.querySelectorAll('.tm-del').forEach(btn=>{ btn.onclick = ()=>{ const id = btn.dataset.id; TEAMS = TEAMS.filter(t=>t.id!==id); const removedPeople = PEOPLE.filter(p=>p.team===id).map(p=>p.id); PEOPLE = PEOPLE.filter(p=>p.team!==id); for(let i=RAW_TASKS.length-1;i>=0;i--){ if(removedPeople.includes(RAW_TASKS[i].person)) RAW_TASKS.splice(i,1); } removedPeople.forEach(pid=>state.personFilter.delete(pid)); state.teamFilter.delete(id); resetTeamForm(); fullRefresh(); }; });
+  teamBoxList.querySelectorAll('.tm-edit').forEach(btn=>{ btn.onclick = ()=>{ const t = teamOf(btn.dataset.id); document.getElementById('tmName').value = t.name; state.editingTeamId = t.id; document.getElementById('tmAddBtn').textContent = '✓ Ekibi Güncelle'; document.getElementById('tmEditNote').style.display = 'block'; }; });
+
   const peopleBox = document.getElementById('peopleList');
-  if(PEOPLE.length===0){
-    peopleBox.innerHTML = '<div class="manager-empty">Henüz kişi eklenmedi.</div>';
-  } else {
-    peopleBox.innerHTML = PEOPLE.map(p=>{
-      return `<div class="manager-item"><div class="mi-text">${p.name}<span class="mi-date">${teamOf(p.team)?teamOf(p.team).name:'—'}</span></div>
-        <div style="display:flex;gap:5px;">
-          <button data-id="${p.id}" class="p-edit" title="Düzenle">✎</button>
-          <button data-id="${p.id}" class="p-del" title="Sil">✕</button>
-        </div></div>`;
-    }).join('');
-  }
-  peopleBox.querySelectorAll('.p-del').forEach(btn=>{
-    btn.onclick = ()=>{
-      const id = btn.dataset.id;
-      PEOPLE = PEOPLE.filter(p=>p.id!==id);
-      // Bu kişiye ait atanmış işler de kaldırılır (kaskad silme)
-      for(let i=RAW_TASKS.length-1;i>=0;i--){ if(RAW_TASKS[i].person===id) RAW_TASKS.splice(i,1); }
-      state.personFilter.delete(id);
-      resetPersonForm();
-      fullRefresh();
-    };
-  });
-  peopleBox.querySelectorAll('.p-edit').forEach(btn=>{
-    btn.onclick = ()=>{
-      const p = personOf(btn.dataset.id);
-      document.getElementById('pName').value = p.name;
-      document.getElementById('pTeam').value = p.team;
-      state.editingPersonId = p.id;
-      document.getElementById('pAddBtn').textContent = '✓ Kişiyi Güncelle';
-      document.getElementById('pEditNote').style.display = 'block';
-    };
-  });
- 
-  /* ---- Projeler ---- */
+  peopleBox.innerHTML = PEOPLE.length===0 ? '<div class="manager-empty">Henüz kişi eklenmedi.</div>' :
+    PEOPLE.map(p=>{ return `<div class="manager-item"><div class="mi-text">${p.name}<span class="mi-date">${teamOf(p.team)?teamOf(p.team).name:'—'}</span></div><button data-id="${p.id}" class="p-edit">✎</button><button data-id="${p.id}" class="p-del">✕</button></div>`; }).join('');
+  peopleBox.querySelectorAll('.p-del').forEach(btn=>{ btn.onclick = ()=>{ const id = btn.dataset.id; PEOPLE = PEOPLE.filter(p=>p.id!==id); for(let i=RAW_TASKS.length-1;i>=0;i--){ if(RAW_TASKS[i].person===id) RAW_TASKS.splice(i,1); } state.personFilter.delete(id); resetPersonForm(); fullRefresh(); }; });
+  peopleBox.querySelectorAll('.p-edit').forEach(btn=>{ btn.onclick = ()=>{ const p = personOf(btn.dataset.id); document.getElementById('pName').value = p.name; document.getElementById('pTeam').value = p.team; state.editingPersonId = p.id; document.getElementById('pAddBtn').textContent = '✓ Kişiyi Güncelle'; document.getElementById('pEditNote').style.display = 'block'; }; });
+
   const projectBox = document.getElementById('projectList');
-  if(PROJECTS.length===0){
-    projectBox.innerHTML = '<div class="manager-empty">Henüz proje eklenmedi.</div>';
-  } else {
-    projectBox.innerHTML = PROJECTS.map(pr=>{
-      return `<div class="manager-item"><div class="mi-text" style="display:flex;align-items:center;gap:8px;"><span style="width:12px;height:12px;border-radius:3px;background:${pr.color};display:inline-block;flex-shrink:0;"></span>${pr.name}</div>
-        <div style="display:flex;gap:5px;">
-          <button data-id="${pr.id}" class="pr-edit" title="Düzenle">✎</button>
-          <button data-id="${pr.id}" class="pr-del" title="Sil">✕</button>
-        </div></div>`;
-    }).join('');
-  }
-  projectBox.querySelectorAll('.pr-del').forEach(btn=>{
-    btn.onclick = ()=>{
-      const id = btn.dataset.id;
-      PROJECTS = PROJECTS.filter(p=>p.id!==id);
-      // Bu projeye ait atanmış işler de kaldırılır (kaskad silme)
-      for(let i=RAW_TASKS.length-1;i>=0;i--){ if(RAW_TASKS[i].project===id) RAW_TASKS.splice(i,1); }
-      state.projectFilter.delete(id);
-      resetProjectForm();
-      fullRefresh();
-    };
-  });
-  projectBox.querySelectorAll('.pr-edit').forEach(btn=>{
-    btn.onclick = ()=>{
-      const pr = projectOf(btn.dataset.id);
-      document.getElementById('prName').value = pr.name;
-      document.getElementById('prColor').value = pr.color;
-      state.editingProjectId = pr.id;
-      document.getElementById('prAddBtn').textContent = '✓ Projeyi Güncelle';
-      document.getElementById('prEditNote').style.display = 'block';
-    };
-  });
- 
-  /* ---- Atanan işler ---- */
+  projectBox.innerHTML = PROJECTS.length===0 ? '<div class="manager-empty">Henüz proje eklenmedi.</div>' :
+    PROJECTS.map(pr=>{ return `<div class="manager-item"><div class="mi-text" style="display:flex;align-items:center;gap:8px;"><span style="width:12px;height:12px;border-radius:3px;background:${pr.color};display:inline-block;flex-shrink:0;"></span><b>${pr.name}</b></div><button data-id="${pr.id}" class="pr-edit">✎</button><button data-id="${pr.id}" class="pr-del">✕</button></div>`; }).join('');
+  projectBox.querySelectorAll('.pr-del').forEach(btn=>{ btn.onclick = ()=>{ const id = btn.dataset.id; PROJECTS = PROJECTS.filter(p=>p.id!==id); for(let i=RAW_TASKS.length-1;i>=0;i--){ if(RAW_TASKS[i].project===id) RAW_TASKS.splice(i,1); } state.projectFilter.delete(id); resetProjectForm(); fullRefresh(); }; });
+  projectBox.querySelectorAll('.pr-edit').forEach(btn=>{ btn.onclick = ()=>{ const pr = projectOf(btn.dataset.id); document.getElementById('prName').value = pr.name; document.getElementById('prColor').value = pr.color; state.editingProjectId = pr.id; document.getElementById('prAddBtn').textContent = '✓ Projeyi Güncelle'; document.getElementById('prEditNote').style.display = 'block'; }; });
+
   const taskBox = document.getElementById('taskList');
-  if(RAW_TASKS.length===0){
-    taskBox.innerHTML = '<div class="manager-empty">Henüz iş atanmadı.</div>';
-  } else {
-    taskBox.innerHTML = TASKS.slice().sort((a,b)=>a.start.localeCompare(b.start)).map(t=>{
-      const p = personOf(t.person), pr = projectOf(t.project);
-      if(!p || !pr) return '';
-      return `<div class="manager-item"><div class="mi-text" style="display:flex;align-items:center;gap:8px;">
-          <span style="width:10px;height:10px;border-radius:3px;background:${pr.color};display:inline-block;flex-shrink:0;"></span>
-          <b>${p.name}</b> — ${pr.name}
-          <span class="mi-date">${fmtShort(t.start)} → ${fmt(t.endDate)} · ${t.effort} a/g efor · ${t.durationCalendarDays} gün süre</span>
-        </div>
-        <div style="display:flex;gap:5px;">
-          <button data-id="${t.id}" class="tk-edit" title="Düzenle">✎</button>
-          <button data-id="${t.id}" class="tk-del" title="Sil">✕</button>
-        </div></div>`;
-    }).join('');
-  }
-  taskBox.querySelectorAll('.tk-del').forEach(btn=>{
-    btn.onclick = ()=>{
-      const id = btn.dataset.id;
-      const i = RAW_TASKS.findIndex(t=>t.id===id);
-      if(i>=0) RAW_TASKS.splice(i,1);
-      resetTaskForm();
-      recomputeAndRenderAll();
-    };
-  });
-  taskBox.querySelectorAll('.tk-edit').forEach(btn=>{
-    btn.onclick = ()=>{
-      const t = RAW_TASKS.find(x=>x.id===btn.dataset.id);
-      if(!t) return;
-      const person = personOf(t.person);
-      document.getElementById('fTeam').value = person.team;
-      updatePersonOptions();
-      document.getElementById('fPerson').value = t.person;
-      document.getElementById('fProject').value = t.project;
-      document.getElementById('fEffort').value = t.effort;
-      document.getElementById('fStart').value = t.start;
-      state.editingTaskId = t.id;
-      document.getElementById('submitTask').textContent = '✓ İşi Güncelle';
-      document.getElementById('taskCancelEdit').style.display = 'inline';
-      document.getElementById('addForm').classList.add('open');
-    };
-  });
+  taskBox.innerHTML = RAW_TASKS.length===0 ? '<div class="manager-empty">Henüz iş atanmadı.</div>' :
+    TASKS.slice().sort((a,b)=>a.start.localeCompare(b.start)).map(t=>{ const p = personOf(t.person), pr = projectOf(t.project); if(!p || !pr) return ''; return `<div class="manager-item"><div class="mi-text" style="display:flex;align-items:center;gap:8px;"><span style="width:10px;height:10px;border-radius:3px;background:${pr.color};display:inline-block;flex-shrink:0;"></span><b>${p.name}</b> — ${pr.name}<span class="mi-date">${fmtShort(t.start)} → ${fmt(t.endDate)} · ${t.effort} a/g · ${t.durationCalendarDays} gün</span></div><button data-id="${t.id}" class="tk-edit">✎</button><button data-id="${t.id}" class="tk-del">✕</button></div>`; }).join('');
+  taskBox.querySelectorAll('.tk-del').forEach(btn=>{ btn.onclick = ()=>{ const id = btn.dataset.id; const i = RAW_TASKS.findIndex(t=>t.id===id); if(i>=0) RAW_TASKS.splice(i,1); resetTaskForm(); recomputeAndRenderAll(); }; });
+  taskBox.querySelectorAll('.tk-edit').forEach(btn=>{ btn.onclick = ()=>{ const t = RAW_TASKS.find(x=>x.id===btn.dataset.id); if(!t) return; const person = personOf(t.person); document.getElementById('fTeam').value = person.team; updatePersonOptions(); document.getElementById('fPerson').value = t.person; document.getElementById('fProject').value = t.project; document.getElementById('fEffort').value = t.effort; document.getElementById('fStart').value = t.start; state.editingTaskId = t.id; document.getElementById('submitTask').textContent = '✓ İşi Güncelle'; document.getElementById('taskCancelEdit').style.display = 'inline'; document.getElementById('addForm').classList.add('open'); }; });
 }
- 
-function resetHolidayForm(){
-  state.editingHolidayDate = null;
-  document.getElementById('mhDate').value=''; document.getElementById('mhLabel').value='';
-  document.getElementById('mhAddBtn').textContent = '+ Tatil Günü Ekle';
-  document.getElementById('mhEditNote').style.display = 'none';
-}
-function resetRegressionForm(){
-  state.editingRegressionKey = null;
-  document.getElementById('mrStart').value=''; document.getElementById('mrEnd').value=''; document.getElementById('mrLabel').value='';
-  document.getElementById('mrAddBtn').textContent = '+ Regresyon Dönemi Ekle';
-  document.getElementById('mrEditNote').style.display = 'none';
-}
-function resetTeamForm(){
-  state.editingTeamId = null;
-  document.getElementById('tmName').value='';
-  document.getElementById('tmAddBtn').textContent = '+ Ekip Ekle';
-  document.getElementById('tmEditNote').style.display = 'none';
-}
-function resetPersonForm(){
-  state.editingPersonId = null;
-  document.getElementById('pName').value='';
-  document.getElementById('pAddBtn').textContent = '+ Kişi Ekle';
-  document.getElementById('pEditNote').style.display = 'none';
-}
-function resetProjectForm(){
-  state.editingProjectId = null;
-  document.getElementById('prName').value=''; document.getElementById('prColor').value='#4C9BE8';
-  document.getElementById('prAddBtn').textContent = '+ Proje Ekle';
-  document.getElementById('prEditNote').style.display = 'none';
-}
-function resetTaskForm(){
-  state.editingTaskId = null;
-  document.getElementById('submitTask').textContent = 'İşi Takvime Yerleştir';
-  document.getElementById('taskCancelEdit').style.display = 'none';
-}
- 
-function recomputeAndRenderAll(){
-  TASKS = computeTasks(RAW_TASKS); // efor/duration hesapları yeni tatil/regresyon günlerine göre yeniden hesaplanır
-  renderAll();
-  persistState();
-}
-function fullRefresh(){
-  populateFormOptions();
-  recomputeAndRenderAll();
-}
- 
-document.getElementById('mhAddBtn').onclick = ()=>{
-  const date = document.getElementById('mhDate').value;
-  const label = document.getElementById('mhLabel').value.trim() || 'Köprü Tatili';
-  if(!date) return;
-  if(state.editingHolidayDate){
-    const h = HOLIDAYS.find(h=>h.date===state.editingHolidayDate);
-    if(h){ h.date=date; h.label=label; }
-  } else {
-    if(HOLIDAYS.some(h=>h.date===date)){ resetHolidayForm(); recomputeAndRenderAll(); return; }
-    HOLIDAYS.push({date, label});
-  }
-  resetHolidayForm();
-  recomputeAndRenderAll();
-};
+
+function resetHolidayForm(){ state.editingHolidayDate = null; document.getElementById('mhDate').value=''; document.getElementById('mhLabel').value=''; document.getElementById('mhAddBtn').textContent = '+ Tatil Günü Ekle'; document.getElementById('mhEditNote').style.display = 'none'; }
+function resetRegressionForm(){ state.editingRegressionKey = null; document.getElementById('mrStart').value=''; document.getElementById('mrEnd').value=''; document.getElementById('mrLabel').value=''; document.getElementById('mrAddBtn').textContent = '+ Regresyon Dönemi Ekle'; document.getElementById('mrEditNote').style.display = 'none'; }
+function resetTeamForm(){ state.editingTeamId = null; document.getElementById('tmName').value=''; document.getElementById('tmAddBtn').textContent = '+ Ekip Ekle'; document.getElementById('tmEditNote').style.display = 'none'; }
+function resetPersonForm(){ state.editingPersonId = null; document.getElementById('pName').value=''; document.getElementById('pAddBtn').textContent = '+ Kişi Ekle'; document.getElementById('pEditNote').style.display = 'none'; }
+function resetProjectForm(){ state.editingProjectId = null; document.getElementById('prName').value=''; document.getElementById('prColor').value='#4C9BE8'; document.getElementById('prAddBtn').textContent = '+ Proje Ekle'; document.getElementById('prEditNote').style.display = 'none'; }
+function resetTaskForm(){ state.editingTaskId = null; document.getElementById('submitTask').textContent = 'İşi Takvime Yerleştir'; document.getElementById('taskCancelEdit').style.display = 'none'; }
+
+function recomputeAndRenderAll(){ TASKS = computeTasks(RAW_TASKS); renderAll(); saveData(); }
+function fullRefresh(){ populateFormOptions(); recomputeAndRenderAll(); }
+
+document.getElementById('mhAddBtn').onclick = ()=>{ const date = document.getElementById('mhDate').value; const label = document.getElementById('mhLabel').value.trim() || 'Köprü Tatili'; if(!date) return; if(state.editingHolidayDate){ const h = HOLIDAYS.find(h=>h.date===state.editingHolidayDate); if(h){ h.date=date; h.label=label; } } else { if(HOLIDAYS.some(h=>h.date===date)){ resetHolidayForm(); recomputeAndRenderAll(); return; } HOLIDAYS.push({date, label}); } resetHolidayForm(); recomputeAndRenderAll(); };
 document.getElementById('mhCancelEdit').onclick = (e)=>{ e.preventDefault(); resetHolidayForm(); renderManagerLists(); };
- 
-document.getElementById('mrAddBtn').onclick = ()=>{
-  const start = document.getElementById('mrStart').value;
-  const end = document.getElementById('mrEnd').value || start;
-  const label = document.getElementById('mrLabel').value.trim() || 'Regresyon Koşumu';
-  if(!start) return;
-  const fixedEnd = end<start?start:end;
-  if(state.editingRegressionKey){
-    const [origStart,origEnd] = state.editingRegressionKey.split('|');
-    const r = REGRESSIONS.find(r=>r.start===origStart && r.end===origEnd);
-    if(r){ r.start=start; r.end=fixedEnd; r.label=label; }
-  } else {
-    REGRESSIONS.push({start, end:fixedEnd, label});
-  }
-  resetRegressionForm();
-  recomputeAndRenderAll();
-};
+document.getElementById('mrAddBtn').onclick = ()=>{ const start = document.getElementById('mrStart').value; const end = document.getElementById('mrEnd').value || start; const label = document.getElementById('mrLabel').value.trim() || 'Regresyon Koşumu'; if(!start) return; const fixedEnd = end<start?start:end; if(state.editingRegressionKey){ const [origStart,origEnd] = state.editingRegressionKey.split('|'); const r = REGRESSIONS.find(r=>r.start===origStart && r.end===origEnd); if(r){ r.start=start; r.end=fixedEnd; r.label=label; } } else { REGRESSIONS.push({start, end:fixedEnd, label}); } resetRegressionForm(); recomputeAndRenderAll(); };
 document.getElementById('mrCancelEdit').onclick = (e)=>{ e.preventDefault(); resetRegressionForm(); renderManagerLists(); };
- 
-document.getElementById('tmAddBtn').onclick = ()=>{
-  const name = document.getElementById('tmName').value.trim();
-  if(!name) return;
-  if(state.editingTeamId){
-    const t = teamOf(state.editingTeamId);
-    if(t){ t.name=name; }
-  } else {
-    const id = genId('team');
-    TEAMS.push({id, name});
-    state.teamFilter.add(id);
-  }
-  resetTeamForm();
-  fullRefresh();
-};
+document.getElementById('tmAddBtn').onclick = ()=>{ const name = document.getElementById('tmName').value.trim(); if(!name) return; if(state.editingTeamId){ const t = teamOf(state.editingTeamId); if(t){ t.name=name; } } else { const id = genId('team'); TEAMS.push({id, name}); state.teamFilter.add(id); } resetTeamForm(); fullRefresh(); };
 document.getElementById('tmCancelEdit').onclick = (e)=>{ e.preventDefault(); resetTeamForm(); renderManagerLists(); };
- 
-document.getElementById('pAddBtn').onclick = ()=>{
-  const name = document.getElementById('pName').value.trim();
-  const team = document.getElementById('pTeam').value;
-  if(!name) return;
-  if(state.editingPersonId){
-    const p = personOf(state.editingPersonId);
-    if(p){ p.name=name; p.team=team; }
-  } else {
-    const id = genId('p');
-    PEOPLE.push({id, name, team});
-    state.personFilter.add(id);
-  }
-  resetPersonForm();
-  fullRefresh();
-};
+document.getElementById('pAddBtn').onclick = ()=>{ const name = document.getElementById('pName').value.trim(); const team = document.getElementById('pTeam').value; if(!name) return; if(state.editingPersonId){ const p = personOf(state.editingPersonId); if(p){ p.name=name; p.team=team; } } else { const id = genId('p'); PEOPLE.push({id, name, team}); state.personFilter.add(id); } resetPersonForm(); fullRefresh(); };
 document.getElementById('pCancelEdit').onclick = (e)=>{ e.preventDefault(); resetPersonForm(); renderManagerLists(); };
- 
-document.getElementById('prAddBtn').onclick = ()=>{
-  const name = document.getElementById('prName').value.trim();
-  const color = document.getElementById('prColor').value;
-  if(!name) return;
-  if(state.editingProjectId){
-    const pr = projectOf(state.editingProjectId);
-    if(pr){ pr.name=name; pr.color=color; }
-  } else {
-    const id = genId('proj');
-    PROJECTS.push({id, name, color});
-    state.projectFilter.add(id);
-  }
-  resetProjectForm();
-  fullRefresh();
-};
+document.getElementById('prAddBtn').onclick = ()=>{ const name = document.getElementById('prName').value.trim(); const color = document.getElementById('prColor').value; if(!name) return; if(state.editingProjectId){ const pr = projectOf(state.editingProjectId); if(pr){ pr.name=name; pr.color=color; } } else { const id = genId('proj'); PROJECTS.push({id, name, color}); state.projectFilter.add(id); } resetProjectForm(); fullRefresh(); };
 document.getElementById('prCancelEdit').onclick = (e)=>{ e.preventDefault(); resetProjectForm(); renderManagerLists(); };
- 
 document.getElementById('taskCancelEdit').onclick = (e)=>{ e.preventDefault(); resetTaskForm(); };
- 
-/* ================= RENDER: EXAMPLE CALLOUT (Madde 6) ================= */
-function renderExample(){
-  const t = TASKS.find(x=>x.id==='t1') || TASKS[0]; // Irmak / Redesign / 5 adam-gün (örnek görev silindiyse ilk göreve düşer)
-  if(!t){ document.getElementById('exampleText').textContent = 'Örneği görmek için en az bir iş atayın.'; return; }
-  const p = personOf(t.person), pr = projectOf(t.project);
-  if(!p || !pr) return;
-  const startLbl = fmt(parseKey(t.start));
-  const endLbl = fmt(t.endDate);
-  document.getElementById('exampleText').innerHTML =
-    `<b>${p.name}</b> tester'a <b>${pr.name}</b> için <b>${t.effort} adam/gün</b> efor atandığında, `+
-    `başlangıç <b>${startLbl}</b> tarihine denk geliyor. `+
-    `Motor tatil/regresyon günlerini ve hafta sonlarını atlayarak gerçek iş günlerini `+
-    `<b>${t.workdays.length} gün</b> olarak korur; ancak takvimde kapladığı toplam süre (duration) `+
-    `atlanan günler dahil <b>${t.durationCalendarDays} gün</b> olur ve iş <b>${endLbl}</b> tarihinde biter. `+
-    `Efor ve duration her iki değer olarak birlikte gösterilir.`;
-}
- 
+
+function renderExample(){ const t = TASKS.find(x=>x.id==='t1') || TASKS[0]; if(!t){ document.getElementById('exampleText').textContent = 'Örneği görmek için en az bir iş atayın.'; return; } const p = personOf(t.person), pr = projectOf(t.project); if(!p || !pr) return; const startLbl = fmt(parseKey(t.start)); const endLbl = fmt(t.endDate); document.getElementById('exampleText').innerHTML = `<b>${p.name}</b> tester'a <b>${pr.name}</b> için <b>${t.effort} adam/gün</b> efor atandığında, başlangıç <b>${startLbl}</b> tarihine denk geliyor. Motor tatil/regresyon günlerini ve hafta sonlarını atlayarak gerçek iş günlerini <b>${t.workdays.length} gün</b> olarak korur; ancak takvimde kapladığı toplam süre (duration) atlanan günler dahil <b>${t.durationCalendarDays} gün</b> olur ve iş <b>${endLbl}</b> tarihinde biter. Efor ve duration her iki değer olarak birlikte gösterilir.`; }
+
 function fmt(d){ return `${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`; }
- 
-/* ================= RENDER: PERIOD LABEL & CLOCK ================= */
-function renderPeriodLabel(){
-  const lbl = document.getElementById('periodLabel');
-  const clock = document.getElementById('clockBox');
-  if(state.mode==='month'){
-    lbl.textContent = `${MONTHS[state.monthAnchor.getMonth()]} ${state.monthAnchor.getFullYear()}`;
-    clock.innerHTML = `${MONTHS[state.monthAnchor.getMonth()]} ${state.monthAnchor.getFullYear()} · Aktif dönem <b>Aylık</b>`;
-  } else {
-    const start = state.weekAnchor, end = addDays(state.weekAnchor,6);
-    lbl.textContent = `${start.getDate()} ${MONTHS[start.getMonth()].slice(0,3)} – ${end.getDate()} ${MONTHS[end.getMonth()].slice(0,3)}`;
-    clock.innerHTML = `Hafta: ${start.getDate()}–${end.getDate()} ${MONTHS[end.getMonth()]} · Aktif dönem <b>Haftalık</b>`;
-  }
-}
- 
-/* ================= RENDER: BOARD (calendar/gantt) ================= */
-function daysInMonth(anchor){
-  const y=anchor.getFullYear(), m=anchor.getMonth();
-  const n = new Date(y,m+1,0).getDate();
-  const arr=[];
-  for(let i=1;i<=n;i++) arr.push(new Date(y,m,i));
-  return arr;
-}
- 
-function renderBoard(){
-  const table = document.getElementById('boardTable');
-  table.className = 'board' + (state.mode==='week' ? ' week' : '');
-  const days = state.mode==='month' ? daysInMonth(state.monthAnchor) : Array.from({length:7},(_,i)=>addDays(state.weekAnchor,i));
-  const people = visiblePeople();
- 
-  let html = '<thead><tr><th class="name-head">Kişi / Ekip</th>';
-  days.forEach(d=>{
-    const br = blockedReason(d);
-    let cls='daycell-head';
-    if(br?.type==='holiday') cls+=' blocked-holiday';
-    else if(br?.type==='regression') cls+=' blocked-regression';
-    else if(br?.type==='weekend') cls+=' weekend';
-    html += `<th class="${cls}" title="${br?br.label:''}"><div class="dow">${DOW[d.getDay()]}</div><div class="dnum">${d.getDate()}</div></th>`;
-  });
-  html += '</tr></thead><tbody>';
- 
-  if(people.length===0){
-    html += `<tr><td colspan="${days.length+1}" style="padding:20px;color:var(--ink-dimmer);text-align:center;">Seçili filtreyle gösterilecek kişi yok.</td></tr>`;
-  }
- 
-  people.forEach(p=>{
-    html += `<tr><td class="person-name-cell"><span class="pname">${p.name}</span><span class="pteam">${teamOf(p.team).name}</span></td>`;
-    const tasks = visibleTasksFor(p.id);
-    days.forEach(d=>{
-      const key = dateKey(d);
-      const br = blockedReason(d);
-      let cellClass='daycell';
-      if(br?.type==='holiday') cellClass+=' holiday';
-      else if(br?.type==='regression') cellClass+=' regression';
-      else if(br?.type==='weekend') cellClass+=' weekend';
- 
-      // bu güne denk gelen görev var mı?
-      let matched=null, isWork=false, isStart=false, isEnd=false;
-      for(const t of tasks){
-        const inRange = key >= t.start && key <= dateKey(t.endDate);
-        if(inRange){
-          matched = t;
-          isWork = t.workdays.some(w=>dateKey(w)===key);
-          isStart = key === t.start;
-          isEnd = key === dateKey(t.endDate);
-          break;
-        }
-      }
- 
-      if(state.mode==='month'){
-        let inner='';
-        if(matched){
-          const pr = projectOf(matched.project);
-          if(isWork){
-            let capCls = (isStart?' start-cap':'')+(isEnd?' end-cap':'');
-            inner = `<div class="task-fill${capCls}" style="background:${pr.color}" title="${pr.name} — ${p.name}"></div>`;
-          } else {
-            inner = `<div class="task-fill gap" title="${blockedReason(d)?.label||''} — planlanamaz"></div>`;
-          }
-        }
-        html += `<td class="${cellClass}">${inner}</td>`;
-      } else {
-        // week mode: richer tag with project name + status
-        let inner = '';
-        if(matched){
-          const pr = projectOf(matched.project);
-          if(isWork){
-            inner = `<div class="week-tag" style="background:${pr.color}">${pr.name}<small>${personEffortLabel(matched)}</small></div>`;
-          } else {
-            inner = `<div class="week-blockedlabel">${blockedReason(d)?.label || 'Planlanamaz'}</div>`;
-          }
-        } else if(br){
-          inner = `<div class="week-blockedlabel">${br.label}</div>`;
-        }
-        html += `<td class="${cellClass}">${inner}</td>`;
-      }
-    });
-    html += '</tr>';
-  });
- 
-  html += '</tbody>';
-  table.innerHTML = html;
-}
- 
-function personEffortLabel(t){
-  return `${t.effort} a/g efor · ${t.durationCalendarDays} gün süre`;
-}
- 
-/* ================= RENDER: SUMMARY TABLE ================= */
-function weekIndexInMonth(d){
-  // Ayın kaçıncı haftası (Pazartesi başlangıçlı) — basit gruplama
-  const firstOfMonth = new Date(d.getFullYear(), d.getMonth(), 1);
-  const firstMonday = mondayOf(firstOfMonth);
-  const diff = Math.floor((d - firstMonday) / (1000*3600*24*7));
-  return diff; // 0-indexed week bucket
-}
- 
-function renderSummary(){
-  const table = document.getElementById('summaryTable');
-  const people = visiblePeople();
- 
-  if(state.mode==='week'){
-    const days = Array.from({length:7},(_,i)=>addDays(state.weekAnchor,i));
-    let html = '<thead><tr><th>Kişi</th><th>Aktif Projeler</th><th class="num">Bu Hafta Toplam Efor</th></tr></thead><tbody>';
-    people.forEach(p=>{
-      const tasks = visibleTasksFor(p.id);
-      let total=0; const projSet=new Map();
-      days.forEach(d=>{
-        const key=dateKey(d);
-        tasks.forEach(t=>{
-          if(t.workdays.some(w=>dateKey(w)===key)){
-            total++;
-            projSet.set(t.project,(projSet.get(t.project)||0)+1);
-          }
-        });
-      });
-      const tags = [...projSet.entries()].map(([pid,c])=>{
-        const pr=projectOf(pid);
-        return `<span class="proj-tag" style="background:${pr.color}">${pr.name} · ${c}g</span>`;
-      }).join('');
-      html += `<tr><td><b>${p.name}</b></td><td><div class="proj-tags">${tags||'—'}</div></td><td class="num total-strong">${total} a/g</td></tr>`;
-    });
-    html += '</tbody>';
-    table.innerHTML = html;
-    return;
-  }
- 
-  // month mode: haftalık dağılım + aylık toplam
-  const days = daysInMonth(state.monthAnchor);
-  const weekBuckets = {};
-  days.forEach(d=>{ const wi = weekIndexInMonth(d); weekBuckets[wi]=true; });
-  const weekIdxs = Object.keys(weekBuckets).map(Number).sort((a,b)=>a-b);
- 
-  let html = '<thead><tr><th>Kişi</th><th>Aktif Projeler</th>';
-  weekIdxs.forEach((wi,i)=> html += `<th class="num">Hafta ${i+1}</th>`);
-  html += '<th class="num">Aylık Toplam</th></tr></thead><tbody>';
- 
-  people.forEach(p=>{
-    const tasks = visibleTasksFor(p.id);
-    const perWeek = {}; weekIdxs.forEach(wi=>perWeek[wi]=0);
-    const projSet = new Map();
-    let monthlyTotal=0;
-    days.forEach(d=>{
-      const key = dateKey(d);
-      const wi = weekIndexInMonth(d);
-      tasks.forEach(t=>{
-        if(t.workdays.some(w=>dateKey(w)===key)){
-          perWeek[wi] = (perWeek[wi]||0)+1;
-          monthlyTotal++;
-          projSet.set(t.project,(projSet.get(t.project)||0)+1);
-        }
-      });
-    });
-    const tags = [...projSet.entries()].map(([pid,c])=>{
-      const pr=projectOf(pid);
-      return `<span class="proj-tag" style="background:${pr.color}">${pr.name} · ${c}g</span>`;
-    }).join('');
-    html += `<tr><td><b>${p.name}</b><br><span style="font-family:var(--mono);font-size:10px;color:var(--ink-dimmer)">${teamOf(p.team).name}</span></td><td><div class="proj-tags">${tags||'—'}</div></td>`;
-    weekIdxs.forEach(wi=>{
-      html += `<td class="num">${perWeek[wi]||0} g</td>`;
-    });
-    html += `<td class="num total-strong">${monthlyTotal} a/g</td></tr>`;
-  });
-  html += '</tbody>';
-  table.innerHTML = html;
-}
- 
-/* ================= RENDER: ADD TASK FORM ================= */
-function populateFormOptions(){
-  const teamSel = document.getElementById('fTeam');
-  teamSel.innerHTML = TEAMS.map(t=>`<option value="${t.id}">${t.name}</option>`).join('');
-  const projSel = document.getElementById('fProject');
-  projSel.innerHTML = PROJECTS.map(p=>`<option value="${p.id}">${p.name}</option>`).join('');
-  updatePersonOptions();
-  teamSel.onchange = updatePersonOptions;
- 
-  const pTeamSel = document.getElementById('pTeam');
-  pTeamSel.innerHTML = TEAMS.map(t=>`<option value="${t.id}">${t.name}</option>`).join('');
-}
-function updatePersonOptions(){
-  const teamId = document.getElementById('fTeam').value;
-  const personSel = document.getElementById('fPerson');
-  const opts = PEOPLE.filter(p=>p.team===teamId);
-  personSel.innerHTML = opts.map(p=>`<option value="${p.id}">${p.name}</option>`).join('');
-}
- 
-document.getElementById('toggleForm').onclick = ()=>{
-  document.getElementById('addForm').classList.toggle('open');
-};
- 
-document.getElementById('submitTask').onclick = ()=>{
-  const person = document.getElementById('fPerson').value;
-  const project = document.getElementById('fProject').value;
-  const effort = Math.max(1, parseInt(document.getElementById('fEffort').value||'1',10));
-  const start = document.getElementById('fStart').value;
-  if(!person || !project || !start) return;
- 
-  if(state.editingTaskId){
-    const t = RAW_TASKS.find(x=>x.id===state.editingTaskId);
-    if(t){ t.person=person; t.project=project; t.effort=effort; t.start=start; }
-    resetTaskForm();
-  } else {
-    const id = genId('t');
-    RAW_TASKS.push({id, person, project, effort, start});
-  }
-  TASKS = computeTasks(RAW_TASKS);
-  // görünümü işin ay/haftasına getir
-  const d = parseKey(start);
-  state.monthAnchor = new Date(d.getFullYear(), d.getMonth(), 1);
-  state.weekAnchor = mondayOf(d);
-  renderAll();
-  persistState();
-};
- 
-/* ================= NAV BUTTONS ================= */
-let resetArmed = false, resetArmTimer = null;
-document.getElementById('resetDataBtn').onclick = ()=>{
-  const btn = document.getElementById('resetDataBtn');
-  if(!resetArmed){
-    resetArmed = true;
-    btn.textContent = 'Emin misiniz? Tekrar tıklayın';
-    btn.style.borderColor = 'var(--thy-red)';
-    btn.style.color = 'var(--thy-red)';
-    clearTimeout(resetArmTimer);
-    resetArmTimer = setTimeout(()=>{
-      resetArmed = false;
-      btn.textContent = 'Varsayılanlara Sıfırla';
-      btn.style.borderColor = ''; btn.style.color = '';
-    }, 4000);
-    return;
-  }
-  clearTimeout(resetArmTimer);
-  resetArmed = false;
-  btn.textContent = 'Varsayılanlara Sıfırla';
-  btn.style.borderColor = ''; btn.style.color = '';
-  resetToDefaults();
-};
-document.getElementById('btnMonth').onclick = ()=>{ state.mode='month'; syncModeButtons(); renderAll(); };
-document.getElementById('btnWeek').onclick  = ()=>{ state.mode='week';  syncModeButtons(); renderAll(); };
-function syncModeButtons(){
-  document.getElementById('btnMonth').classList.toggle('active', state.mode==='month');
-  document.getElementById('btnWeek').classList.toggle('active', state.mode==='week');
-}
-document.getElementById('prevBtn').onclick = ()=>{
-  if(state.mode==='month'){
-    state.monthAnchor = new Date(state.monthAnchor.getFullYear(), state.monthAnchor.getMonth()-1, 1);
-  } else {
-    state.weekAnchor = addDays(state.weekAnchor,-7);
-  }
-  renderAll();
-};
-document.getElementById('nextBtn').onclick = ()=>{
-  if(state.mode==='month'){
-    state.monthAnchor = new Date(state.monthAnchor.getFullYear(), state.monthAnchor.getMonth()+1, 1);
-  } else {
-    state.weekAnchor = addDays(state.weekAnchor,7);
-  }
-  renderAll();
-};
- 
-/* ================= MASTER RENDER ================= */
-function renderAll(){
-  syncModeButtons();
-  renderPeriodLabel();
-  renderFilterChips();
-  renderManagerLists();
-  renderExample();
-  renderBoard();
-  renderSummary();
-}
- 
-(async function init(){
-  setSaveStatus('Yükleniyor…', false);
-  await loadState();
-  populateFormOptions();
-  renderAll();
-})();
+
+function renderPeriodLabel(){ const lbl = document.getElementById('periodLabel'); const clock = document.getElementById('clockBox'); if(state.mode==='month'){ lbl.textContent = `${MONTHS[state.monthAnchor.getMonth()]} ${state.monthAnchor.getFullYear()}`; clock.innerHTML = `${MONTHS[state.monthAnchor.getMonth()]} ${state.monthAnchor.getFullYear()} · Aktif dönem <b>Aylık</b>`; } else { const start = state.weekAnchor, end = addDays(state.weekAnchor,6); lbl.textContent = `${start.getDate()} ${MONTHS[start.getMonth()].slice(0,3)} – ${end.getDate()} ${MONTHS[end.getMonth()].slice(0,3)}`; clock.innerHTML = `Hafta: ${start.getDate()}–${end.getDate()} ${MONTHS[end.getMonth()]} · Aktif dönem <b>Haftalık</b>`; } }
+
+function renderBoard(){const boardEl = document.getElementById('boardTable');const people = visiblePeople();if(people.length === 0){boardEl.innerHTML = '';return;}let startDate, endDate, headerCells = [];if(state.mode === 'month'){const anchor = state.monthAnchor;startDate = new Date(anchor.getFullYear(), anchor.getMonth(), 1);endDate = new Date(anchor.getFullYear(), anchor.getMonth() + 1, 0);}else{startDate = new Date(state.weekAnchor);endDate = addDays(state.weekAnchor, 6);}for(let d=new Date(startDate);d<=endDate;d=addDays(d,1)){const k = dateKey(d);const blocked = isBlocked(d);const blocked_reason = blockedReason(d);const reason_class = blocked_reason?.type || '';headerCells.push({date:d, blocked, reason_class});}let html = '<colgroup><col class="name-col">';for(let i=0;i<headerCells.length;i++)html += '<col>';html += '</colgroup><thead><tr><th class="name-head">Kişi</th>';for(const cell of headerCells){const dow = DOW[cell.date.getDay()];const dnum = cell.date.getDate();html += `<th><div class="daycell-head ${cell.blocked?'blocked-'+cell.reason_class:''} ${cell.reason_class==='weekend'?'weekend':''}"><span class="dow">${dow}</span><span class="dnum">${dnum}</span></div></th>`;}html += '</tr></thead><tbody>';for(const person of people){const tasks = visibleTasksFor(person.id);html += '<tr>';html += `<td class="person-name-cell"><div class="pname">${person.name}</div><div class="pteam">${teamOf(person.team)?.name || ''}</div></td>`;for(const hcell of headerCells){const k = dateKey(hcell.date);let cellContent = '';let cellClass = 'daycell';if(hcell.blocked)cellClass += ' ' + hcell.reason_class;for(const task of tasks){const taskDates = task.allDays.map(d=>dateKey(d.date));if(taskDates.includes(k)){const taskIndex = taskDates.indexOf(k);const project = projectOf(task.project);const taskColor = project?.color || '#999';const isStart = (taskIndex === 0);const isEnd = (taskIndex === taskDates.length - 1);const isGap = task.allDays[taskIndex]?.blocked;const capClass = (isStart?'start-cap ':'') + (isEnd?'end-cap ':'') + (isGap?'gap':'');cellContent += `<div class="task-fill ${capClass}" style="background:${taskColor};" title="${task.project}"></div>`;}}if(hcell.blocked && !cellContent)cellContent = '<div class="week-blockedlabel">TATIL</div>';html += `<td class="${cellClass}">${cellContent}</td>`;}html += '</tr>';}html += '</tbody>';boardEl.innerHTML = html;}
+
+function renderSummary(){const summaryEl = document.getElementById('summaryTable');const people = visiblePeople();if(people.length === 0){summaryEl.innerHTML = '';return;}let html = '<thead><tr><th>Kişi</th><th class="num">Ekip</th><th class="num">Atanmış Efor (a/g)</th><th class="num">Projeler</th></tr></thead><tbody>';for(const person of people){const tasks = visibleTasksFor(person.id);const totalEffort = tasks.reduce((sum, t) => sum + t.effort, 0);const projectSet = new Set(tasks.map(t=>t.project));const projects = Array.from(projectSet).map(pid=>{ const p = projectOf(pid); return p?`<div class="proj-tag" style="background:${p.color}">${p.name}</div>`:''; }).join('');const team = teamOf(person.team);html += `<tr><td><strong>${person.name}</strong></td><td class="num">${team?.name || '—'}</td><td class="num"><span class="total-strong">${totalEffort}</span></td><td><div class="proj-tags">${projects || '—'}</div></td></tr>`;}html += '</tbody>';summaryEl.innerHTML = html;}
+
+function populateFormOptions(){ document.getElementById('fTeam').innerHTML = TEAMS.map(t=>`<option value="${t.id}">${t.name}</option>`).join(''); updatePersonOptions(); document.getElementById('fProject').innerHTML = PROJECTS.map(p=>`<option value="${p.id}">${p.name}</option>`).join(''); document.getElementById('pTeam').innerHTML = TEAMS.map(t=>`<option value="${t.id}">${t.name}</option>`).join(''); }
+
+function updatePersonOptions(){ const teamId = document.getElementById('fTeam').value; document.getElementById('fPerson').innerHTML = PEOPLE.filter(p=>p.team===teamId).map(p=>`<option value="${p.id}">${p.name}</option>`).join(''); }
+
+function renderAll(){ renderFilterChips(); renderManagerLists(); renderPeriodLabel(); renderBoard(); renderSummary(); renderExample(); }
+
+document.getElementById('btnMonth').onclick = ()=>{ state.mode = 'month'; document.getElementById('btnMonth').classList.add('active'); document.getElementById('btnWeek').classList.remove('active'); renderAll(); };
+document.getElementById('btnWeek').onclick = ()=>{ state.mode = 'week'; document.getElementById('btnWeek').classList.add('active'); document.getElementById('btnMonth').classList.remove('active'); renderAll(); };
+document.getElementById('prevBtn').onclick = ()=>{ if(state.mode==='month')state.monthAnchor = addDays(state.monthAnchor,-30); else state.weekAnchor = addDays(state.weekAnchor,-7); renderAll(); };
+document.getElementById('nextBtn').onclick = ()=>{ if(state.mode==='month')state.monthAnchor = addDays(state.monthAnchor,30); else state.weekAnchor = addDays(state.weekAnchor,7); renderAll(); };
+document.getElementById('toggleForm').onclick = ()=>{ const form = document.getElementById('addForm'); form.classList.toggle('open'); };
+document.getElementById('submitTask').onclick = ()=>{ const team = document.getElementById('fTeam').value; const person = document.getElementById('fPerson').value; const project = document.getElementById('fProject').value; const effort = Number(document.getElementById('fEffort').value); const start = document.getElementById('fStart').value; if(!person || !project || !start || effort < 1)return; if(state.editingTaskId){ const t = RAW_TASKS.find(x=>x.id===state.editingTaskId); if(t){t.person=person;t.project=project;t.effort=effort;t.start=start;} state.editingTaskId = null; resetTaskForm(); } else { const id = genId('task'); RAW_TASKS.push({id, person, project, effort, start}); } document.getElementById('fStart').value = '2026-10-19'; document.getElementById('fEffort').value = '3'; document.getElementById('addForm').classList.remove('open'); recomputeAndRenderAll(); };
+document.getElementById('resetDataBtn').onclick = ()=>{ if(confirm('Tüm verileri örnek başlangıç durumuna döndürmek istediğinize emin misiniz?')){ resetData(); } };
+
+loadData().then(() => { fullRefresh(); });
 </script>
 </body>
 </html>
